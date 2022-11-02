@@ -3,10 +3,10 @@ package com.example.demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-public class Demo1Application {
+public class HomePage {
 
-    @RequestMapping("/about")
-    public String printAboutPageText() {
-        return "HomePage";
+    @RequestMapping("/home")
+    public String printHomePageText() {
+        return "Welcome user!";
     }
 }

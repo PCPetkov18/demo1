@@ -3,10 +3,10 @@ package com.example.demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-public class Demo1Application {
+public class UserPage {
 
-    @RequestMapping("/about")
-    public String printAboutPageText() {
-        return "HomePage";
+    @RequestMapping("/user")
+    public String printUserPageText() {
+        return "User: Plamen Petkov" + " Age: 18" + " From: Burgas";
     }
 }
